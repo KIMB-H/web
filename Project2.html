@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="colors.js"></script>
+    </head>
+    <body>
+        <div id="topBanner">
+            <h1><a href="index.html">Portfolio</a></h1>
+            <div id="topButton">
+            <input type="button" value="login" onclick="alert('hi');">
+            <input type="button" value="night" onclick="
+                nightDayHandler(this);
+            "> <!--자신이 포함된 태그를 가리키는 this-->
+            </div>
+        </div>
+        <div id="grid">
+            <ol>
+                <li><a href="Project1.html">프로젝트 1</a></li>
+                <li><a href="Project2.html">프로젝트 2</a></li>
+            </ol>
+            <div>         <!--Grid 이용을 위해 내부를 두 부분으로 나눠줄 태그로 div 태그를 이용하였다. -->
+                <h2>프로젝트 2</h2>
+                <p>
+                    <h3><u>introduction</u></h3>
+                    <p>안녕하세요. 저는 개발자를 꿈꾸고 있는 김보화입니다.</p>
+                    <p>이 사이트는 제 개발 과정을 담은 프로젝트를 소개하는 블로그입니다. 문의사항이 있으시면 아래의 연락처로 연락주시기 바랍니다.</p>
+                </p>
+                <p>
+                    <img src="" alt="">
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

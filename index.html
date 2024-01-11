@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    This is My Portfolio.
+</title>
+<link rel="stylesheet" href="style.css"> <!--style.css를 한 번 다운로드하게 되면 캐싱으로 인해 비용을 줄일 수 있다.-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="colors.js"></script>
+</head>
+<body>
+    <!-- 주석 처리 -->
+    <div id="topBanner">
+        <h1><a href="index.html">Portfolio</a></h1>
+        <div id="topButton">
+        <input type="button" value="login" onclick="alert('hi');">
+        <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        "> <!--자신이 포함된 태그를 가리키는 this-->
+        </div>
+    </div>
+    <div id="grid">
+        <ol>
+            <li><a href="Project1.html">프로젝트 1</a></li>
+            <li><a href="Project2.html">프로젝트 2</a></li>
+        </ol>
+        <div>         <!--Grid 이용을 위해 내부를 두 부분으로 나눠줄 태그로 div 태그를 이용하였다. -->
+            <h2>intro</h2>
+            <p>
+                <h3><u>introduction</u></h3>
+                <p>안녕하세요. 저는 개발자를 꿈꾸고 있는 김보화입니다.</p>
+                <p>이 사이트는 제 개발 과정을 담은 프로젝트를 소개하는 블로그입니다. 문의사항이 있으시면 아래의 연락처로 연락주시기 바랍니다.</p>
+            </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE?si=Tdrr7rDIWQVy9-I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+            <p>
+                <h3><u>Spec</u></h3>
+                <ul>
+                    <li>Language : html, css, javascript, java, python, c</li>
+                    <li>Frame Work : </li>
+                    <li>DataBase : </li>
+                    <li>웹서버 : Live Server</li>
+                </ul>
+            </p>
+            <p>
+                <h3><u>Education</u></h3>
+                <ul>
+                    <li>군산대학교 소프트웨어학부 컴퓨터정보공학전공 졸업 2024.02.</li>
+                    <li>전주호남제일고등학교 졸업 2020.02.</li>
+                </ul>
+            </p>
+            <p>
+                <h3><u>Certificate</u></h3>
+                <script>var certificate = ['정보처리기사', '네트워크 관리사 2급'];</script>
+                <table>
+                    <tr><th>no</th><th>자격증명</th></tr>
+                    <script>
+                        for (var i=0; i<certificate.length; i++){
+                            document.write('<tr><td>'+(i+1)+'</td><td>'+certificate[i]+'</td></tr>');
+                        }
+                    </script>
+                </table>
+            </p>
+            <p>
+                <h3><u>Personal</u></h3>
+                <ul>
+                    <li>telephone : </li>
+                    <li>email : </li>
+                    <li>blog : <a href=""></a></li>
+                    <li>github : <a href=""></a></li>
+                </ul>
+            </p>
+            <p>
+                <img src="" alt="">
+            </p>
+        </div>
+    </div>
+</body>
+</html>
