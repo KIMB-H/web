@@ -1,4 +1,4 @@
-var Body = {
+const Body = {
     setColor: function (color) {
         // document.querySelector('body').style.color = color;
         $('body').css('color', color);
@@ -15,10 +15,10 @@ $(’a’).css(’color’,color);
 
 $라는 이름의 함수, 모든 ‘a’ 태그를 jQuery로 제어하겠다.
  */
-var Links = {
+const Links = {
     setColor: function (color) {
-        // var lists = document.querySelectorAll('a');
-        // for (var i = 0; i < lists.length; i++) {
+        // const lists = document.querySelectorAll('a');
+        // for (let i = 0; i < lists.length; i++) {
         //     lists[i].style.color = color;
         // }
         $('a').css('color', color);
@@ -36,7 +36,7 @@ var Links = {
     */
 
 function nightDayHandler(self) {
-    var target = document.querySelector('body');
+    const target = document.querySelector('body');
 
     if (self.value === 'night') {
         Body.setBackGroundColor('black');
@@ -44,7 +44,7 @@ function nightDayHandler(self) {
         self.value = 'day';
         Links.setColor('powderblue');
     } else {
-        Body.setBackGroundColor('white');
+        Body.setBackGroundColor('mintcream');
         Body.setColor('black');
         self.value = 'night';
         Links.setColor('black');
